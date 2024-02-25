@@ -113,3 +113,29 @@ button {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.discouns {
+    position: relative;
+    overflow: hidden;
+}
+
+.advertising-line {
+    display: flex;
+}
+
+.ticker-item {
+    color: #000;
+    white-space: nowrap; /* Чтобы элементы не переносились на следующую строку */
+    flex-shrink: 0; /* Чтобы элементы не сжимались */
+    padding: 0 30px;
+    animation: discount-animation 10s linear infinite;
+}
+
+@keyframes discount-animation {
+    0% {
+        transform: translateZ(0);
+    }
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
