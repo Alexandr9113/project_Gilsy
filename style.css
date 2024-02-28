@@ -7,7 +7,7 @@ body {
     padding: 0;
     margin: auto;
     width: 1920px;
-    font-family: "Yeseva One", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #0C0C0E;
@@ -17,6 +17,7 @@ body {
 h2{
     padding: 0;
     margin: 0;
+    font-family: "Yeseva One", sans-serif;
     font-size: 36px;
     font-weight: 400;
     width: 964px;
@@ -26,6 +27,7 @@ h2{
 h1 {
     padding: 0;
     margin: 0;
+    font-family: "Yeseva One", sans-serif;
     font-size: 64px;
     font-weight: 400;
     text-align: center;
@@ -88,12 +90,21 @@ button {
     margin: auto;
     border: none;
     border-radius: 42px;
-    width: 187px;
     height: 60px;
     background: linear-gradient(90deg, #d7b357 6.06%, #dbbd6d 37.1%, #e4d6a0 100%);
-    font-family: "Yeseva One", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
+    font-size: 16px;
     color: #0C0C0E;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #f9e9c2 6.06%, #eed9a0 37.1%, #fff7d8 100%);
+}
+
+button:active {
+    background: linear-gradient(90deg, #caa442 6.06%, #c1a456 37.1%, #e4d6a0 100%);;
 }
 
 .founding-date {
@@ -127,7 +138,7 @@ button {
     color: #000;
     white-space: nowrap; /* Чтобы элементы не переносились на следующую строку */
     flex-shrink: 0; /* Чтобы элементы не сжимались */
-    padding: 0 30px;
+    padding: 15px 30px;
     animation: discount-animation 10s linear infinite;
 }
 
@@ -138,4 +149,26 @@ button {
     to {
         transform: translate3d(-100%, 0, 0);
     }
+}
+
+.services {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 1920px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.card-text {
+    display: flex;
+    width: 50%;
+    left: 25%;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
 }
