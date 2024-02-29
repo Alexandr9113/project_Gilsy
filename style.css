@@ -95,7 +95,7 @@ nav {
 }
 
 button {
-    padding: 20px 50px;
+    padding: 22px 50px;
     margin: auto;
     border: none;
     border-radius: 42px;
@@ -176,7 +176,7 @@ button:active {
 }
 
 .card img {
-    filter: saturate(0);
+    filter: saturate(0) brightness(50%);
     transition: 0.5s;
 }
 
@@ -218,4 +218,16 @@ button:active {
 
 .description {
     color: #FFFFFF;
+}
+
+.btn-services {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #000;
+    border-radius: 0 0 400px 400px;
+}
+
+.btn-services button {
+    margin: 50px 0;
 }
