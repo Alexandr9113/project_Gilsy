@@ -165,6 +165,7 @@ button:active {
     align-items: flex-start;
     flex-wrap: wrap;
     width: 1920px;
+    margin-bottom: 120px;
 }
 
 .card {
@@ -230,4 +231,73 @@ button:active {
 
 .btn-services button {
     margin: 50px 0;
+}
+
+.benefits {
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+}
+
+.benefits h2 {
+    color: #000;
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 67%;
+    column-gap: 100px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 356px;
+    height: 338px;
+    margin-bottom: 30px;
+    background: #000;
+    color: #FFFFFF;
+    border-radius: 40px;
+}
+
+.cell img {
+    padding: 0;
+    height: 55px;
+    width: 55px;
+    margin: 35px 0;
+}
+
+.benefits-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    margin: 0 30px;
+}
+
+.benefits-txt h3{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.benefits-txt hr {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+}
+
+.benefits-txt p {
+    font-size: 14px;
+    line-height: 16px;
 }
