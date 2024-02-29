@@ -20,7 +20,6 @@ h2{
     font-family: "Yeseva One", sans-serif;
     font-size: 36px;
     font-weight: 400;
-    width: 964px;
     color: #FFFFFF;
 }
 
@@ -32,6 +31,14 @@ h1 {
     font-weight: 400;
     text-align: center;
     color: #FFFFFF;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 header {
@@ -81,6 +88,8 @@ nav {
     padding: 0;
     margin: 0;
     display: flex;
+    width: 964px;
+    text-align: center;
     flex-direction: column;
     gap: 50px;
 }
@@ -159,16 +168,54 @@ button:active {
 }
 
 .card {
+    overflow: hidden;
     display: flex;
     align-items: center;
     position: relative;
+    justify-content: center;
+}
+
+.card img {
+    filter: saturate(0);
+    transition: 0.5s;
+}
+
+.card:hover img {
+    filter: saturate(1);
+    transform: scale(1.1);
 }
 
 .card-text {
+    position: absolute;
     display: flex;
+    gap: 30px;
     width: 50%;
-    left: 25%;
+    margin: 0;
+    padding: 65px 52px;
     text-align: center;
     flex-direction: column;
-    position: absolute;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.card:hover .card-text {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.card:hover .description, .card:hover .title {
+    background: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    background: linear-gradient(90deg, #d7b357 6.06%, #dbbd6d 37.1%, #e4d6a0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description {
+    color: #FFFFFF;
 }
