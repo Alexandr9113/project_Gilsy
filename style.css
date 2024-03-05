@@ -1,10 +1,14 @@
- html {
+ * {
+    margin: 0;
+    padding: 0;
+ }
+ 
+html {
     scroll-behavior: smooth;
     scrollbar-width: none;
 }
 
 body {
-    padding: 0;
     margin: auto;
     width: 1920px;
     font-family: "Roboto", sans-serif;
@@ -15,8 +19,6 @@ body {
 }
 
 h2{
-    padding: 0;
-    margin: 0;
     font-family: "Yeseva One", sans-serif;
     font-size: 36px;
     font-weight: 400;
@@ -24,8 +26,6 @@ h2{
 }
 
 h1 {
-    padding: 0;
-    margin: 0;
     font-family: "Yeseva One", sans-serif;
     font-size: 64px;
     font-weight: 400;
@@ -34,8 +34,6 @@ h1 {
 }
 
 p {
-    padding: 0;
-    margin: 0;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -44,7 +42,6 @@ p {
 header {
     position: absolute;
     padding: 15px 0;
-    margin: 0;
     display: flex;
     width: 1920px;
     justify-content: center;
@@ -59,8 +56,6 @@ nav {
 }
 
 .menu {
-    margin: 0;
-    padding: 0;
     display: inline-flex;
     align-items: center;
     gap: 30px;
@@ -74,7 +69,6 @@ nav {
 }
 
 .cover {
-    margin: 0;
     padding: 329px 0 60px 0;
     display: flex;
     flex-direction: column;
@@ -85,8 +79,6 @@ nav {
 }
 
 .appointment {
-    padding: 0;
-    margin: 0;
     display: flex;
     width: 964px;
     text-align: center;
@@ -118,8 +110,6 @@ button:active {
 
 .founding-date {
     display: flex;
-    margin: 0;
-    padding: 0;
     gap: 15px;
 }
 
@@ -191,7 +181,6 @@ button:active {
     display: flex;
     gap: 30px;
     width: 50%;
-    margin: 0;
     padding: 65px 52px;
     text-align: center;
     flex-direction: column;
@@ -268,7 +257,6 @@ button:active {
 }
 
 .cell img {
-    padding: 0;
     height: 55px;
     width: 55px;
     margin: 35px 0;
@@ -283,8 +271,6 @@ button:active {
 }
 
 .benefits-txt h3{
-    padding: 0;
-    margin: 0;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -292,8 +278,6 @@ button:active {
 }
 
 .benefits-txt hr {
-    margin: 0;
-    padding: 0;
     width: 40%;
 }
 
