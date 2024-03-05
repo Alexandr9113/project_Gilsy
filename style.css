@@ -302,6 +302,57 @@ button:active {
     line-height: 16px;
 }
 
+
+
+
+
+
+
+
+
+
+
+.contacts {
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+    background-color: #000;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    width: 50%;
+}
+
+.communications {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.media {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.contacts-info a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contacts iframe {
+    filter: saturate(0) brightness(50%);
+    transition: 0.5s;
+}
+
+.contacts iframe:hover {
+    filter: saturate(1) brightness(100%);
+}
+
 footer {
     height: 616px;
     display: flex;
