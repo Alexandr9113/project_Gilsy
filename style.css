@@ -1,4 +1,4 @@
-html {
+ html {
     scroll-behavior: smooth;
     scrollbar-width: none;
 }
@@ -300,4 +300,41 @@ button:active {
 .benefits-txt p {
     font-size: 14px;
     line-height: 16px;
+}
+
+footer {
+    height: 616px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.logo-foot p {
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: "Roboto", sans-serif;
+}
+
+.logo-foot img {
+    width: 124px;
+}
+
+.apps {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+.dop-info p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.dop-info span {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
