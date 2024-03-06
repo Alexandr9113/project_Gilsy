@@ -5,12 +5,11 @@
  
 html {
     scroll-behavior: smooth;
-    scrollbar-width: none;
 }
 
 body {
     margin: auto;
-    width: 1920px;
+    max-width: 1920px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -43,11 +42,16 @@ header {
     position: absolute;
     padding: 15px 0;
     display: flex;
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
     justify-content: center;
     backdrop-filter: blur(7px);
     background: rgba(255, 255, 255, 0.6);
-    gap: 471px;
+    gap: 35%;
+}
+
+.logo {
+    width: 124px;
 }
 
 nav {
@@ -68,6 +72,125 @@ nav {
     text-decoration: none;
 }
 
+@media screen and (max-width: 1600px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    .logo {
+        width: 110px;
+    }
+    
+    .menu {
+        gap: 25px;
+    }
+
+    .menu a img {
+        width: 35px;
+    }
+}
+
+
+/** Adaptive **/
+.toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 15;
+}
+
+.toggle div {
+    width: 80%;
+    height: 2px;
+    background: #000;
+    margin: 3px 0;
+    z-index: 15;
+}
+
+.toggle.collapsed .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle.collapsed .line2 {
+    opacity: 0;
+}
+
+.toggle.collapsed .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    header {
+        gap: 50%
+    }
+
+    nav {
+        display: none;
+    }
+
+    .toggle {
+        display: flex;
+    }
+    .nav.collapsed {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        min-height: 525px;
+        flex-direction: column;
+        background: #c1c1c1;
+    }
+    .menu.collapsed {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding-top: 50px;
+        gap: 60px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+}
+
 .cover {
     padding: 329px 0 60px 0;
     display: flex;
@@ -75,12 +198,12 @@ nav {
     justify-content:space-between;
     align-items: center;
     background: url(assets/Images/png/cover.png);
-    height: calc(1000px - 60px - 329px);
+    height: calc(1000px - 60px - 329px);  /* Так делать не правильно, нужно будет уточнить */
 }
 
 .appointment {
     display: flex;
-    width: 964px;
+    width: 51%;
     text-align: center;
     flex-direction: column;
     gap: 50px;
@@ -114,7 +237,6 @@ button:active {
 }
 
 .founding-date p {
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     text-align: center;
@@ -150,17 +272,19 @@ button:active {
     }
 }
 
+/* Нужно сделать так, чтобы tiker небыло видно при отдалении экрана*/
+
 .services {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 1920px;
     margin-bottom: 120px;
 }
 
 .card {
     overflow: hidden;
     display: flex;
+    width: 50%;
     align-items: center;
     position: relative;
     justify-content: center;
@@ -224,6 +348,7 @@ button:active {
 
 .benefits {
     margin-bottom: 120px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,7 +363,7 @@ button:active {
 .flex-box {
     display: flex;
     flex-wrap: wrap;
-    width: 67%;
+    width: 1270px;
     column-gap: 100px;
     align-items: center;
     justify-content: flex-start;
@@ -286,7 +411,11 @@ button:active {
     line-height: 16px;
 }
 
-
+@media screen and (max-width: 800px) {
+    .flex-box {
+        width: 400px;
+    }
+}
 
 
 
@@ -329,6 +458,7 @@ button:active {
 }
 
 .contacts iframe {
+    width: 50%;
     filter: saturate(0) brightness(50%);
     transition: 0.5s;
 }
