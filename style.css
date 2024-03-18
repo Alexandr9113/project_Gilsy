@@ -187,10 +187,6 @@ nav {
     }
 }
 
-@media screen and (max-width: 320px) {
-    
-}
-
 .cover {
     padding: 329px 0 60px 0;
     display: flex;
@@ -430,7 +426,7 @@ button:active {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .flex-box {
         width: 300px;
     }
@@ -500,7 +496,7 @@ button:active {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .contacts iframe {
         height: 400px;
     }
@@ -543,7 +539,7 @@ footer {
     gap: 30px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .apps {
         flex-direction: column;
     }
