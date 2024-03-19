@@ -541,6 +541,26 @@ button:active {
     background-color: #d7b357;
 }
 
+@media screen and (max-width: 1300px) {
+    .about-salon {
+        flex-direction: column;
+    }
+
+    .interior {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .interior {
+        height: 400px;
+    }
+}
+
+
+
+
 
 
 
