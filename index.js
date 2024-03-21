@@ -84,3 +84,40 @@ setInterval(() => {
 }, 5000);
 
 addPagination();
+
+//Review slider
+const reviewsSlider = document.getElementById("reviews-slider");
+const arrowLeft = document.querySelector(".left");
+const arrowRight = document.querySelector(".right");
+const reviews = document.querySelectorAll(".user-reviews");
+
+let currentReviewIndex = 0;
+const reviewsSliderWidth = reviewsSlider.clientWidth;
+
+function showReviews() {
+    reviewsSlider.style.transform = `translateX(-${currentReviewIndex * reviewsSliderWidth}px)`;
+}
+
+function changeReview(reviewsSliderIndex) {
+    currentReviewIndex = reviewsSliderIndex;
+    showReviews();
+}
+
+function nextReview() {
+    let newReviewIndex = currentReviewIndex + 1;
+    if(newReviewIndex > reviews.length - 1) {
+        newReviewIndex = 0;
+    }
+    changeReview(newReviewIndex);
+}
+
+function prevReview() {
+    let newReviewIndex = currentReviewIndex - 1;
+    if(newReviewIndex < 0) {
+        newReviewIndex = reviews.length - 1;
+    }
+    changeReview(newReviewIndex);
+}
+
+arrowLeft.addEventListener("click", prevReview);
+arrowRight.addEventListener("click", nextReview);
