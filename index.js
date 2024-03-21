@@ -92,10 +92,9 @@ const arrowRight = document.querySelector(".right");
 const reviews = document.querySelectorAll(".user-reviews");
 
 let currentReviewIndex = 0;
-const reviewsSliderWidth = 303.25;
 
 function showReviews() {
-    reviewsSlider.style.transform = `translateX(-${currentReviewIndex * reviewsSliderWidth}px)`;
+    reviewsSlider.style.transform = `translateX(-${currentReviewIndex * reviewsSlider.clientWidth}px)`;
 }
 
 function changeReview(reviewsSliderIndex) {
