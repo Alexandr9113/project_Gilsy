@@ -92,6 +92,7 @@ const arrowRight = document.querySelector(".right");
 const reviews = document.querySelectorAll(".user-reviews");
 
 let currentReviewIndex = 0;
+setInterval(5000)
 const reviewsSliderWidth = reviewsSlider.clientWidth;
 
 function showReviews() {
