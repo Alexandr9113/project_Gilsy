@@ -669,7 +669,8 @@ button:active {
 }
 
 .item:hover {
-    transform: scale(1.25);
+    transform: scale(1.35);
+    box-shadow: 0 0 35px 16px rgba(0, 0, 0, 0.2);
 }
 
 .gallery:hover .items1,
