@@ -207,7 +207,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     background: no-repeat url(assets/Images/png/cover.png);
-    height: calc(1000px - 60px - 329px);  /* Так делать не правильно, нужно будет уточнить */
+    background-position: center;
+    height: calc(1000px - 60px - 329px);
 }
 
 .appointment {
@@ -570,11 +571,14 @@ button:active {
 .reviews {
     width: 50%;
     height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .reviews h2 {
     text-align: center;
-    padding: 15% 0;
+    padding: 12% 0;
 }
 
 .slider-container {
@@ -602,7 +606,7 @@ button:active {
 }
 
 .user-reviews p {
-    width: 100%;
+    width: 50%;
     color: #fff;
 }
 
@@ -628,6 +632,12 @@ button:active {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .user-reviews p {
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .reviews {
         height: 600px;
@@ -639,7 +649,8 @@ button:active {
     overflow: hidden;
 }
 
-.items {
+.items1,
+.items2 {
     display: flex;
     white-space: nowrap;
     flex-shrink: 0;
@@ -652,11 +663,17 @@ button:active {
     transition: 0.1s;
 }
 
+.items1:hover,
+.items2:hover {
+    z-index: 1000;
+}
+
 .item:hover {
     transform: scale(1.25);
 }
 
-.gallery:hover .items{
+.gallery:hover .items1,
+.gallery:hover .items2 {
     animation-play-state: paused;
 }
 

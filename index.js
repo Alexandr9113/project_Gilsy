@@ -27,7 +27,6 @@ const pagination = document.getElementById("pagination");
 
 let currentSlideIndex = 0;
 const paginationCircles = [];
-const sliderWidth = slider.clientWidth;
 
 function createPaginationCircle() {
     const div = document.createElement("div");
@@ -53,7 +52,7 @@ function removeActiveClass() {
 }
 
 function showSlide() {
-    slider.style.transform = `translateX(-${currentSlideIndex * sliderWidth}px)`;
+    slider.style.transform = `translateX(-${currentSlideIndex * slider.clientWidth}px)`;
 }
 
 function changeSlide(slideIndex) {
