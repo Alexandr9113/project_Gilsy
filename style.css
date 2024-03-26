@@ -892,6 +892,10 @@ footer {
     justify-content: space-between;
 }
 
+.logo-foot {
+    margin-bottom: 20px;
+}
+
 .logo-foot p {
     font-size: 16px;
     font-weight: 400px;
