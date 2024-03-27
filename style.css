@@ -14,30 +14,30 @@ body {
     max-width: 1920px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: clamp(14px, 1vw, 20px); /*20px*/
     color: #0C0C0E;
     background-color: #FFFFFF;
 }
 
-h2{
+h1 {
     font-family: "Yeseva One", sans-serif;
-    font-size: 36px;
+    font-size: clamp(32px, 5vw, 64px); /*64px*/
     font-weight: 400;
+    text-align: center;
     color: #FFFFFF;
 }
 
-h1 {
+h2{
     font-family: "Yeseva One", sans-serif;
-    font-size: 64px;
+    font-size: clamp(18px, 2vw, 36px);  /*36px*/
     font-weight: 400;
-    text-align: center;
     color: #FFFFFF;
 }
 
 p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: clamp(14px, 1vw, 20px) 20px; /*20px*/
 }
 
 a {
@@ -99,7 +99,7 @@ nav {
 }
 
 @media screen and (max-width: 1600px) {
-    body {
+    /* body {
         font-size: 18px;
     }
 
@@ -109,7 +109,7 @@ nav {
 
     h2{
         font-size: 30px;
-    }
+    } */
 
     header {
         padding: 10px 0;
@@ -200,34 +200,6 @@ nav {
     }
 }
 
-@media screen and (max-width:800px) {
-    body {
-        font-size: 16px;
-    }
-
-    h1 {
-        font-size: 48px;
-    }
-
-    h2{
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width:450px) {
-    body {
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    h2{
-        font-size: 18px;
-    }
-}
-
 .start-image {
     padding: 300px 0 60px 0;
     display: flex;
@@ -274,13 +246,22 @@ button:active {
 }
 
 .founding-date p {
-    font-weight: 400;
-    font-size: 16px;
     text-align: center;
     background: linear-gradient(90deg, #d7b357 6.06%, #dbbd6d 37.1%, #e4d6a0 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width:1150px) {
+    .start-image {
+        padding: 230px 0 30px 0;
+        gap: 150px;
+    }
+
+    .appointment {
+        width: 75%;
+    }
 }
 
 @media screen and (max-width:450px) {
@@ -408,7 +389,7 @@ button:active {
     }
 
     .description {
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
@@ -436,6 +417,7 @@ button:active {
 
 .benefits h2 {
     color: #000;
+    font-size: 32px;
 }
 
 .flex-box {
@@ -485,16 +467,10 @@ button:active {
 }
 
 .benefits-txt p {
-    font-size: 14px;
     line-height: 16px;
 }
 
-@media screen and (max-width: 1300px) {
-    .benefits h2 {
-        font-size: 32px;
-        text-align: center;
-    }
-    
+@media screen and (max-width: 1300px) {    
     .flex-box {
         width: 850px;
     }
@@ -516,12 +492,6 @@ button:active {
         height: 33px;
         margin: 27px 0;
     }
-
-    .benefits-txt h3 {
-        font-size: 22px;
-    }
-
-
 }
 
 .about-salon {
@@ -688,7 +658,7 @@ button:active {
 .item {
     margin: 120px 0;
     height: 460px;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .items1:hover,
@@ -721,13 +691,6 @@ button:active {
         display: none;
     }
 }
-
-
-
-
-
-
-
 
 .contacts {
     display: flex;
@@ -782,12 +745,6 @@ button:active {
 
     .contacts iframe {
         width: 100%;
-        height: 600px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .contacts iframe {
         height: 400px;
     }
 }
@@ -809,6 +766,7 @@ button:active {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: clamp(16px, 2vw, 24px);
     align-items: center;
     text-align: center;
     margin-bottom: 120px;
@@ -817,13 +775,13 @@ button:active {
 .services-menu {
     width: 35%;
     list-style: none;
-
 }
+
 .services-menu li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80px;
+    line-height: clamp(60px, 6vw, 80px);
     border-bottom:solid 1px #424242
 }
 
@@ -835,7 +793,7 @@ button:active {
     border-bottom: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
     .services-page {
         height: 400px;
         background-size: 140%;
@@ -844,7 +802,6 @@ button:active {
 
     .service {
         margin-bottom: 70px;
-        font-size: 18px;
     }
 
     .services-menu {
@@ -861,7 +818,6 @@ button:active {
 
     .service {
         margin-bottom: 30px;
-        font-size: 16px;
     }
 
     .services-menu {
@@ -869,12 +825,122 @@ button:active {
     }
 }
 
-@media screen and (max-width: 450px) {
-    .contacts iframe {
-        height: 400px;
+/* Servise-description */
+
+.service-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200px 0;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.service-description img {
+    width: 40%;
+}
+
+.service-text {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    justify-content: center;
+}
+
+.service-text p,
+.service-text h1{
+    color: #000;
+    text-align: left;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+table{
+    width: 65%;
+    border-collapse: collapse;
+}
+
+.gold {
+    background: linear-gradient(90deg, #d7b357 6.06%, #dbbd6d 37.1%, #e4d6a0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+th {
+    text-align: left;
+    font-family: "Yeseva One", sans-serif;
+    font-size: clamp(22px, 3vw, 36px); /*36px*/
+    font-weight: 400;
+    padding-left: 30px;
+    padding-bottom: 50px;
+}
+
+tr {
+    border-bottom: solid 1px #d7b357;
+}
+
+td {
+    padding: 20px 0 20px 30px;
+}
+
+@media screen and (max-width: 1150px){
+    .service-description {
+        padding: 120px 0 30px 30px;
+        width: 85%;
+    }
+
+    .service-description img {
+        padding-bottom: 52px;
+    }
+
+    .service-text h1 {
+        text-align: center;
+    }
+
+    table{
+        width: 80%;
+        border-collapse: collapse;
+    }
+
+    th {
+        padding-left: 15px;
+        width: 33%;
+    }
+    
+    td {
+        width: 33%;
     }
 }
 
+@media screen and (max-width: 800px){
+    .service-description img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .service-description {
+        padding: 120px 0 50px 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .service-text {
+        width: 75%;
+    }
+
+    .service-description img {
+        width: 50%;
+    }
+}
 
 
 
@@ -894,16 +960,6 @@ footer {
 
 .logo-foot {
     margin-bottom: 20px;
-}
-
-.logo-foot p {
-    font-size: 16px;
-    font-weight: 400px;
-    font-family: "Roboto", sans-serif;
-}
-
-.logo-foot img {
-    width: 50%;
 }
 
 .apps {
@@ -928,7 +984,7 @@ footer {
     gap: 30px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
     .apps {
         flex-direction: column;
     }
