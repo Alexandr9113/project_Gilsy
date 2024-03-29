@@ -81,6 +81,7 @@ nav {
 
 .nav-item {
     color: #000;
+    font-size: 20px;
     text-decoration: none;
     position: relative;
 }
@@ -148,6 +149,7 @@ nav {
     .toggle {
         display: flex;
     }
+
     .nav.collapsed {
         position: absolute;
         left: 0;
@@ -160,6 +162,7 @@ nav {
         flex-direction: column;
         background: #c1c1c1;
     }
+
     .menu.collapsed {
         display: flex;
         align-items: center;
@@ -228,6 +231,7 @@ button:active {
 }
 
 @media screen and (max-width:1350px) {
+
     .start-image {
         padding: 230px 0 30px 0;
         gap: 150px;
@@ -239,6 +243,7 @@ button:active {
 }
 
 @media screen and (max-width:450px) {
+
     .start-image {
         padding: 230px 0 30px 0;
         gap: 150px;
@@ -329,6 +334,7 @@ button:active {
 }
 
 @media screen and (max-width: 1300px) {
+
     .card-text {
         width: 70%;
         padding: 30px 20px;
@@ -340,6 +346,7 @@ button:active {
 }
 
 @media screen and (max-width: 1000px) {
+
     .services {
         flex-direction: column;
     }
@@ -400,6 +407,7 @@ button:active {
 }
 
 .benefits h2 {
+    text-align: center;
     color: #000;
     font-size: 32px;
 }
@@ -455,19 +463,22 @@ button:active {
     font-size: 14px;
 }
 
-@media screen and (max-width: 1300px) {    
+@media screen and (max-width: 1300px) { 
+
     .flex-box {
         width: 850px;
     }
 }
 
 @media screen and (max-width: 1000px) {
+
     .flex-box {
         width: 400px;
     }
 }
 
 @media screen and (max-width: 450px) {
+
     .flex-box {
         width: 300px;
     }
@@ -535,6 +546,7 @@ button:active {
 }
 
 @media screen and (max-width: 1300px) {
+
     .about-salon {
         flex-direction: column;
     }
@@ -542,10 +554,10 @@ button:active {
     .interior {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 450px) {
+
     .interior {
         height: 400px;
     }
@@ -606,6 +618,7 @@ button:active {
 }
 
 @media screen and (max-width: 1300px) {
+
     .about-salon {
         margin-bottom: 5px;
     }
@@ -616,12 +629,14 @@ button:active {
 }
 
 @media screen and (max-width: 800px) {
+
     .user-reviews p {
         width: 80%;
     }
 }
 
 @media screen and (max-width: 450px) {
+
     .reviews {
         height: 600px;
     }
@@ -662,6 +677,7 @@ button:active {
 }
 
 @keyframes scroll {
+
     0% {
         transform: translate(0, 0);
     }
@@ -672,6 +688,7 @@ button:active {
 }
 
 @media screen and (max-width: 1300px) {
+
     .gallery {
         display: none;
     }
@@ -719,6 +736,7 @@ button:active {
 }
 
 @media screen and (max-width: 1000px) {
+
     .contacts {
         flex-direction: column;
     }
@@ -736,15 +754,18 @@ button:active {
 
 /* Service */
 
-.services-page {
+.start-page-image {
     padding-top: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: no-repeat center url(assets/Images/png/service.png);
     width: 100%;
     height: 642px;
     margin-bottom: 120px;
+}
+
+.service-page {
+    background: no-repeat center url(assets/Images/png/service.png);
 }
 
 .service {
@@ -779,11 +800,6 @@ button:active {
 }
 
 @media screen and (max-width: 1150px) {
-    .services-page {
-        height: 400px;
-        background-size: 140%;
-        margin-bottom: 70px;
-    }
 
     .service {
         margin-bottom: 70px;
@@ -795,11 +811,6 @@ button:active {
 }
 
 @media screen and (max-width: 800px) {
-    .services-page {
-        height: 300px;
-        background-size: 250%;
-        margin-bottom: 30px;
-    }
 
     .service {
         margin-bottom: 30px;
@@ -858,7 +869,7 @@ button:active {
     margin-bottom: 120px;
 }
 
-table{
+table {
     width: 65%;
     border-collapse: collapse;
 }
@@ -888,6 +899,7 @@ td {
 }
 
 @media screen and (max-width: 1150px){
+
     .description {
         padding: 120px 0 50px 30px;
         width: 85%;
@@ -913,6 +925,7 @@ td {
 }
 
 @media screen and (max-width: 800px){
+
     .description img {
         width: 40%;
     }
@@ -935,6 +948,7 @@ td {
 }
 
 @media screen and (max-width: 550px){
+
     .description {
         padding: 120px 0 50px 0;
         flex-direction: column;
@@ -959,14 +973,7 @@ td {
 /*works*/
 
 .works-page {
-    padding-top: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background: no-repeat center url(assets/Images/png/works.png);
-    width: 100%;
-    height: 642px;
-    margin-bottom: 120px;
 }
 
 .works {
@@ -1018,11 +1025,6 @@ td {
 }
 
 @media screen and (max-width: 1300px){
-    .works-page {
-        height: 400px;
-        background-size: 140%;
-        margin-bottom: 70px;
-    }
 
     .works {
         width: 100%;
@@ -1034,6 +1036,7 @@ td {
 }
 
 @media screen and (max-width: 1000px){
+
     .works {
         flex-direction: column;
     }
@@ -1044,11 +1047,6 @@ td {
 }
 
 @media screen and (max-width: 800px){
-    .works-page {
-        height: 300px;
-        background-size: 250%;
-        margin-bottom: 30px;
-    }
 
     .works {
         margin-bottom: 30px;
@@ -1093,6 +1091,7 @@ td {
 }
 
 @media screen and (max-width: 1300px){
+
     .works-edit {
         width: 80%;
         padding-bottom: 100px;
@@ -1108,6 +1107,7 @@ td {
 }
 
 @media screen and (max-width: 1000px){
+
     .works-edit {
         padding-bottom: 70px;
     }
@@ -1123,6 +1123,7 @@ td {
 }
 
 @media screen and (max-width: 800px){
+
     .works-edit {
         padding-bottom: 30px;
     }
@@ -1143,6 +1144,128 @@ td {
         width: 300px;
     }
 }
+
+/*Team*/
+
+.team-page {
+    background: no-repeat center url(assets/Images/png/team.png);
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 408px 408px 408px;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.team-card {
+    position: relative;
+}
+
+.team-card img {
+    width: 408px;
+    height: 500px;
+    filter: saturate(0);
+    transition: 0.5s;
+}
+
+.team-card:hover img {
+    filter: saturate(1);
+}
+
+.stuff {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    bottom: -15px;
+    width: 100%;
+    background:rgba(255, 255, 255, 0.6);
+    padding: 32px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.stuff h3 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.stuff p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.team-card:hover .stuff {
+    bottom: 0px;
+    opacity: 1;
+}
+
+.black {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    font-size: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 408px;
+    height: 500px;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .team {
+        grid-template-columns: 408px 408px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .team {
+        grid-template-columns: 408px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .team {
+        grid-template-columns: 245px;
+    }
+
+    .team-card img {
+        width: 245px;
+        height: 300px;
+    }
+
+    .black {
+        width: 245px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .start-page-image {
+        height: 400px;
+        background-size: 140%;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .start-page-image {
+        height: 300px;
+        background-size: 250%;
+        margin-bottom: 30px;
+    }
+}
+
+
 
 
 
