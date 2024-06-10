@@ -1064,31 +1064,20 @@ button:active {
 
 .services-menu {
     width: 35%;
-    list-style: none;
+    /* list-style: none; */
 }
 
-.services-menu li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    line-height: clamp(60px, 6vw, 80px);
-    border-bottom:solid 1px #424242
+.services-menu tr {
+    line-height: clamp(20px, 6vw, 50px);
 }
 
-.services-menu li:hover {
+.services-menu tr:hover {
     background: -webkit-gradient(linear, left top, right top, color-stop(6.06%, #d7b357), color-stop(37.1%, #dbbd6d), to(#e4d6a0));
     background: -o-linear-gradient(left, #d7b357 6.06%, #dbbd6d 37.1%, #e4d6a0 100%);
     background: linear-gradient(90deg, #d7b357 6.06%, #dbbd6d 37.1%, #e4d6a0 100%);
 }
 
-#border-none {
+.services-menu tr:last-of-type {
     border-bottom: none;
 }
 
